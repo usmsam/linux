@@ -15,200 +15,207 @@
       text-align: center;
       margin-bottom: 2rem;
     }
+		li {
+			margin-bottom: 20px;
+			line-height: 1.2;
+		}
+		li strong  {
+			color: #000;
+		}
   </style>
 </head>
 <body>
 	<h1>Вопросы и ответы по Linux</h1>
 	<ol>
-		<li><strong>C какой целью его используют параметр ifcfg-eth0 faylida NM_CONTROLLED=no?</strong><br>Чтобы NetworkManager не управлял интерфейсом.</li>
-		<li><strong>В Apache, через какую директиву активируется файл .htaccess?</strong><br>AllowOverride.</li>
-		<li><strong>В каких каталогах обычно находятся команды администратора?</strong><br>/sbin, /usr/sbin.</li>
-		<li><strong>В какой каталог копируется скрипт при добавлении новой службы в SysVinit?</strong><br>/etc/init.d.</li>
-		<li><strong>В какой среде была разработана демоверсия upstart init?</strong><br>Ubuntu.</li>
-		<li><strong>В какой файл рекомендуется добавлять alias (псевдоним), чтобы сделать его постоянным?</strong><br>~/.bashrc.</li>
-		<li><strong>В каком блоке происходит настройка виртуальных хостов в Apache?</strong><br>&lt;VirtualHost&gt;.</li>
-		<li><strong>В каком каталоге контролируется сценариями, запуск или остановка служб в sysvinit?</strong><br>/etc/init.d и /etc/rc.d.</li>
-		<li><strong>В каком каталоге находится DocumentRoot по умолчанию для содержимого в Apache?</strong><br>/var/www/html.</li>
-		<li><strong>В каком каталоге находится основной файл конфигурации Apache?</strong><br>/etc/httpd/conf.</li>
-		<li><strong>В каком каталоге находится основной файл конфигурации vsftpd?</strong><br>/etc.</li>
-		<li><strong>В каком каталоге находятся файлы конфигурации сетевого интерфейса?</strong><br>/etc/sysconfig/network-scripts.</li>
-		<li><strong>В каком каталоге находятся файлы конфигурации службы в Upstart?</strong><br>/etc/init.</li>
-		<li><strong>В каком каталоге хранятся log файлы vsftpd?</strong><br>/var/log.</li>
-		<li><strong>В каком пакете находится web-сервер Apache в Fedora и RHEL?</strong><br>httpd.</li>
-		<li><strong>В каком разделе на страницах man находится информация об устройствах и пользовательских файлах?</strong><br>Раздел 4.</li>
-		<li><strong>В каком редакторе можно редактировать команду в истории с помощью команды fc?</strong><br>По умолчанию vi.</li>
-		<li><strong>В каком файле установлен параметр bonding_opts при настройке интерфейса Bonding?</strong><br>/etc/sysconfig/network-scripts/ifcfg-bond0.</li>
-		<li><strong>В каком файле установлен уровень запуска по умолчанию в SysVinit?</strong><br>/etc/inittab.</li>
-		<li><strong>В каком файле хранятся личные настройки shell пользователя?</strong><br>~/.bashrc или ~/.bash_profile.</li>
-		<li><strong>В конфигурации Apache, какой каталог используется для добавления файлов с расширением conf?</strong><br>/etc/httpd/conf.d.</li>
-		<li><strong>В чем главный недостаток редактирования файлов конфигурации?</strong><br>Высокий риск ошибок и необходимость перезапуска служб.</li>
-		<li><strong>В чем одно из основных преимуществ программного обеспечения с открытым исходным кодом?</strong><br>Свобода модификации и отсутствие лицензий.</li>
-		<li><strong>В чем одно из основных различий между Windows и Linux?</strong><br>Linux — открытый и настраиваемый, Windows — проприетарный.</li>
-		<li><strong>В чем основное отличие команды ifconfig от команды ip addr show?</strong><br>ip — современная замена ifconfig с расширенной функциональностью.</li>
-		<li><strong>В чем основное отличие команды sudo от команды su?</strong><br>sudo выполняет одну команду с правами root, su переключает пользователя.</li>
-		<li><strong>В чем особенность статических служб в systemd?</strong><br>Не могут быть запущены напрямую, используются как зависимости.</li>
-		<li><strong>В чем преимущество команды killall?</strong><br>Убивает процессы по имени, а не по PID.</li>
-		<li><strong>Где записать файл образа для установки Ubuntu Server на Raspberry Pi?</strong><br>На microSD-карту через dd или Raspberry Pi Imager.</li>
-		<li><strong>Где хранится информация о конфигурации в Linux?</strong><br>/etc.</li>
-		<li><strong>Для каких целей используется команда lspci?</strong><br>Просмотр информации об устройствах PCI.</li>
-		<li><strong>Для каких целей используется команда ping?</strong><br>Проверка доступности узла по сети.</li>
-		<li><strong>Для каких целей используется команда su?</strong><br>Переключение на другого пользователя.</li>
-		<li><strong>Для каких целей используется шлюз по умолчанию (default gateway)?</strong><br>Для выхода за пределы локальной сети.</li>
-		<li><strong>Для каких целей можно использовать команду /bin/mount для обычных пользователей?</strong><br>Монтирование, если разрешено через /etc/fstab или sudo.</li>
-		<li><strong>Для какого демона инициализации используется команда chkconfig, для аудита служб?</strong><br>SysVinit.</li>
-		<li><strong>Для чего используется proksi-сервер squid?</strong><br>Кэширование, фильтрация и контроль интернет-доступа.</li>
-		<li><strong>Для чего используется команда traceroute?</strong><br>Определение маршрута до хоста.</li>
-		<li><strong>Для чего используется пользователь lp?</strong><br>Управление печатью.</li>
-		<li><strong>Для чего используется файл /etc/hosts?</strong><br>Локальное сопоставление IP и доменных имён.</li>
-		<li><strong>Если нужно renice (обновить) процесс во время работы top, надо записать его идентификатор процесса (PID) и на какую кнопку нужно нажать?</strong><br>Нажать <code>r</code>, ввести PID и новый nice.</li>
-		<li><strong>Из какого каталога можно получить информацию о процессах?</strong><br>/proc.</li>
-		<li><strong>Из какого файла демон sysvinit получает информацию о конфигурации?</strong><br>/etc/inittab.</li>
-		<li><strong>К каким службам proksi-сервер обычно предоставляет доступ?</strong><br>HTTP, HTTPS, FTP.</li>
-		<li><strong>Как выполнить перезагрузку службы в Upstart?</strong><br><code>restart имя_службы</code>.</li>
-		<li><strong>Как демон systemd init ускоряет работу служб?</strong><br>Параллельный запуск и socket-based activation.</li>
-		<li><strong>Как долго обычно длится время аренды IP-адреса (lease Time)?</strong><br>24 часа (по умолчанию, зависит от настройки DHCP).</li>
-		<li><strong>Как называются рабочие уровни в systemd?</strong><br>Targets.</li>
-		<li><strong>Как определить сетевые настройки при установке Ubuntu Server?</strong><br>Через меню установки или файл cloud-init/netplan.</li>
-		<li><strong>Как происходит подключение (mounting) файловых систем в Linux?</strong><br>Через команду <code>mount</code> или записи в <code>/etc/fstab</code>.</li>
-		<li><strong>Какая shell используется в качестве shell по умолчанию в большинстве систем Linux?</strong><br>bash.</li>
-		<li><strong>Какая директива используется для определения документа ошибки в Apache?</strong><br>ErrorDocument.</li>
-		<li><strong>Какая из этих команд используется для показа списока ранее выполненных команд?</strong><br>history.</li>
-		<li><strong>Какая клавиша нажимается в команде top для сортировки процессов по использованию памяти (RAM)?</strong><br><code>M</code>.</li>
-		<li><strong>Какая клавиша нажимается для выключения процесса в команде top?</strong><br><code>k</code>.</li>
-		<li><strong>Какая команда используется для автоматического запуска web-сервера apache в Fedora?</strong><br><code>systemctl enable httpd</code>.</li>
-		<li><strong>Какая команда используется для автоматического запуска службы vsftpd в Fedora?</strong><br><code>systemctl enable vsftpd</code>.</li>
-		<li><strong>Какая команда используется для включения службы в systemd?</strong><br><code>systemctl enable имя_службы</code>.</li>
-		<li><strong>Какая команда используется для возврата фонового процесса в предыдущий режим (foreground)?</strong><br><code>fg</code>.</li>
-		<li><strong>Какая команда используется для определения местоположения команды?</strong><br><code>which</code>.</li>
-		<li><strong>Какая команда используется для остановки службы в sysvinit?</strong><br><code>service имя_службы stop</code>.</li>
-		<li><strong>Какая команда используется для проверки статуса службы в Upstart?</strong><br><code>status имя_службы</code>.</li>
-		<li><strong>Какая команда используется для проверки текущего состояния службы в SysVinit?</strong><br><code>service имя_службы status</code>.</li>
-		<li><strong>Какая команда используется для продолжения процесса в фоновом режиме (background)?</strong><br><code>bg</code>.</li>
-		<li><strong>Какая команда используется для просмотра UUID всех устройств в системе?</strong><br><code>blkid</code>.</li>
-		<li><strong>Какая команда используется для просмотра всех переменных в текущей shell?</strong><br><code>set</code>.</li>
-		<li><strong>Какая команда используется для просмотра переменных среды?</strong><br><code>env</code>.</li>
-		<li><strong>Какая команда используется для просмотра поддерживаемых файловых систем в Linux?</strong><br><code>cat /proc/filesystems</code>.</li>
-		<li><strong>Какая команда используется для просмотра процессов в фоновом режиме?</strong><br><code>jobs</code>.</li>
-		<li><strong>Какая команда используется для просмотра псевдонимов в shell?</strong><br><code>alias</code>.</li>
-		<li><strong>Какая команда используется для просмотра разделов диска в системе Linux?</strong><br><code>fdisk -l</code> или <code>lsblk</code>.</li>
-		<li><strong>Какая команда используется для просмотра текущей переменной среды PATH в shell?</strong><br><code>echo $PATH</code>.</li>
-		<li><strong>Какая команда используется для расширения логической папки LVM?</strong><br><code>lvextend</code>.</li>
-		<li><strong>Какая команда используется для создания файловой системы ext4 в новой логической папке?</strong><br><code>mkfs.ext4</code>.</li>
-		<li><strong>Какая команда используется для удаления NetworkManager в системах RHEL или более старых системах Fedora?</strong><br><code>yum remove NetworkManager</code>.</li>
-		<li><strong>Какая команда используется, чтобы сделать службу постоянной в sysvinit?</strong><br><code>chkconfig имя_службы on</code>.</li>
-		<li><strong>Какая команда рекомендуется для редактирования файла sudoers?</strong><br><code>visudo</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для ввода текущего слова в нижнем регистре в командной строке?</strong><br><code>Alt + l</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для добавления специального символа в командную строку?</strong><br><code>Ctrl + v</code> перед символом.</li>
-		<li><strong>Какая комбинация клавиш используется для замены местами текущего и предыдущего слов в командной строке?</strong><br><code>Ctrl + t</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для замены местами текущего и предыдущего символов в командной строке?</strong><br><code>Ctrl + t</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для обратного поиска в истории команд?</strong><br><code>Ctrl + r</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для обрезки текста от курсора до конца строки в командной строке?</strong><br><code>Ctrl + k</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для переключения между виртуальными консолями?</strong><br><code>Ctrl + Alt + F1–F6</code> (или F7–F12).</li>
-		<li><strong>Какая комбинация клавиш используется для перемещения курсора к началу строки при редактировании командной строки?</strong><br><code>Ctrl + a</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для перемещения слова назад при редактировании командной строки?</strong><br><code>Alt + b</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для перехода в конец текущей строки при редактировании командной строки?</strong><br><code>Ctrl + e</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для преобразования слова в прописные буквы в командной строке?</strong><br><code>Alt + u</code>.</li>
-		<li><strong>Какая комбинация клавиш используется для увеличения первой буквы текущего слова в командной строке?</strong><br><code>Alt + c</code>.</li>
-		<li><strong>Какая опция используется для отображения содержимого каталога в Apache?</strong><br>Options Indexes.</li>
-		<li><strong>Какая организация поддерживает web-сервер Apache?</strong><br>Apache Software Foundation.</li>
-		<li><strong>Какая форма используется для расширения арифметического выражения?</strong><br><code>$(( выражение ))</code>.</li>
-		<li><strong>Какие root-права требуются при запуске графических элементов управления?</strong><br>Права суперпользователя (sudo/root).</li>
-		<li><strong>Какие данные отображает команда ip addr show?</strong><br>IP-адреса, MAC-адреса, состояния интерфейсов.</li>
-		<li><strong>Какие клавиши обычно используются для доступа к меню загрузки (boot) при установке Ubuntu Server?</strong><br><code>F2</code>, <code>F10</code>, <code>F12</code>, <code>Esc</code> (зависит от производителя).</li>
-		<li><strong>Какие команды хранятся в каталоге sbin?</strong><br>Системные команды для администратора.</li>
-		<li><strong>Какие настройки используются при ограничении диапазона портов для пассивного FTP в vsftpd?</strong><br><code>pasv_min_port</code> и <code>pasv_max_port</code>.</li>
-		<li><strong>Какие права требуются для выполнения задач управления системой?</strong><br>Права суперпользователя (root).</li>
-		<li><strong>Какие типы данных можно изменить с помощью system-config-network?</strong><br>IP-адрес, маска, шлюз, DNS, имя хоста, интерфейсы.</li>
-		<li><strong>Какие функции должен поддерживать сервисный скрипт в sysvinit?</strong><br><code>start</code>, <code>stop</code>, <code>restart</code>, <code>status</code>.</li>
-		<li><strong>Каким образом можно изменить настройки proksi в браузере Firefox?</strong><br>Настройки → Сеть → Настроить подключение → Прокси-сервер.</li>
-		<li><strong>Каким режимом определяется рабочий уровень 3?</strong><br>Многопользовательский режим без GUI.</li>
-		<li><strong>Каким режимом определяется рабочий уровень 4?</strong><br>Не используется, доступен для пользовательской настройки.</li>
-		<li><strong>Каким режимом определяется рабочий уровень 5?</strong><br>Многопользовательский режим с GUI.</li>
-		<li><strong>Каким режимом определяется рабочий уровень 6?</strong><br>Перезагрузка (reboot).</li>
-		<li><strong>Какова основная функция DNS-сервера?</strong><br>Преобразование доменных имен в IP-адреса.</li>
-		<li><strong>Какова основная функция метаданного Pipe ( | )?</strong><br>Передача вывода одной команды как ввода другой.</li>
-		<li><strong>Какова основная функция поля swap в Linux?</strong><br>Расширение оперативной памяти с помощью дискового пространства.</li>
-		<li><strong>Какова основная функция сигнала SIGHUP (1)?</strong><br>Перезапуск процесса или перечтение конфигурации.</li>
-		<li><strong>Какова основная функция файла /etc/fstab?</strong><br>Автоматическое монтирование файловых систем при загрузке.</li>
-		<li><strong>Какова основная функция ядра Linux?</strong><br>Управление ресурсами системы и взаимодействие между аппаратурой и ПО.</li>
-		<li><strong>Какова основная цель VPN-соединения?</strong><br>Безопасная передача данных через интернет.</li>
-		<li><strong>Какова основная цель системы Active Directory в Windows?</strong><br>Централизованное управление пользователями и ресурсами.</li>
-		<li><strong>Каковы минимальные требования к оперативной памяти (RAM) для установки Ubuntu Server?</strong><br>512 МБ (рекомендуется от 1 ГБ).</li>
-		<li><strong>Какое действие выполняется, чтобы отключить службу в Upstart?</strong><br><code>echo "manual" > /etc/init/имя.override</code>.</li>
-		<li><strong>Какое имя пользователя и пароль по умолчанию используются при первой загрузке сервера Ubuntu на Raspberry Pi?</strong><br><code>ubuntu</code> / <code>ubuntu</code>.</li>
-		<li><strong>Какое имя файла используется для создания интерфейса с псевдонимом?</strong><br><code>ifcfg-eth0:0</code>.</li>
-		<li><strong>Какое руководство используется для проверки контекстов файлов для Apache в SELinux?</strong><br><code>semanage fcontext</code>.</li>
-		<li><strong>Какое слово будет добавлено, чтобы предоставить пользователю root доступ без пароля через sudo?</strong><br><code>NOPASSWD:</code>.</li>
-		<li><strong>Какое событие можно использовать для запуска службы в Upstart?</strong><br><code>start on</code> с указанием события (например, <code>runlevel</code>).</li>
-		<li><strong>Какое требование предъявляет Public Litsenziyasi  GNU (GPL)?</strong><br>Открытый исходный код и сохранение лицензии при распространении.</li>
-		<li><strong>Какое устройство используется для подключения к проводной сети?</strong><br>Ethernet-интерфейс (обычно <code>eth0</code> или <code>enpXsY</code>).</li>
-		<li><strong>Какой UID (идентификатор пользователя) отображается для пользователя root в файле /etc/passwd?</strong><br><code>0</code>.</li>
-		<li><strong>Какой web-сайт вы должны посетить, чтобы загрузить Ubuntu Server для Raspberry Pi?</strong><br><a href="https://ubuntu.com/download/raspberry-pi">ubuntu.com/download/raspberry-pi</a>.</li>
-		<li><strong>Какой базовый каталог по умолчанию для анонимного пользователя на FTP-сервере?</strong><br><code>/var/ftp</code> или <code>/srv/ftp</code>.</li>
-		<li><strong>Какой вариант используется для подключения сетевых файловых систем (например, NFS) в файле /etc/fstab?</strong><br><code>nfs</code>.</li>
-		<li><strong>Какой графический инструмент используется для управления учетными записями пользователей и групп?</strong><br><code>gnome-system-tools</code> (Users and Groups).</li>
-		<li><strong>Какой идентификатор используется для идентификации процесса в системе Linux?</strong><br>PID (Process ID).</li>
-		<li><strong>Какой идентификатор процесса (PID) имеет демон инициализации Linux?</strong><br><code>1</code>.</li>
-		<li><strong>Какой инструмент используется для отображения подробной информации о жестких дисках, управления разделами диска и добавления файловых систем?</strong><br><code>gparted</code>.</li>
-		<li><strong>Какой интерфейс предоставляет инструмент system-config-network?</strong><br>Графический (GUI) и текстовый (TUI) интерфейсы настройки сети.</li>
-		<li><strong>Какой командой выполняется условный перезапуск службы в systemd?</strong><br><code>systemctl try-restart имя_службы</code>.</li>
-		<li><strong>Какой метасимвол используется для последовательного выполнения нескольких команд?</strong><br><code>;</code>.</li>
-		<li><strong>Какой пакет является FTP-сервером, используемым по умолчанию в Linux?</strong><br><code>vsftpd</code>.</li>
-		<li><strong>Какой параметр используется в vsftpd для ограничения локальных пользователей в их домашних каталогах?</strong><br><code>chroot_local_user=YES</code>.</li>
-		<li><strong>Какой параметр используется для включения загрузки файлов анонимным пользователем в vsftpd?</strong><br><code>anon_upload_enable=YES</code>.</li>
-		<li><strong>Какой параметр используется для изменения значения nice процесса с помощью команды renice?</strong><br><code>-n</code>.</li>
-		<li><strong>Какой параметр используется для краткого описания команды?</strong><br><code>--help</code>.</li>
-		<li><strong>Какой параметр используется для отображения скрытых файлов в команде ls?</strong><br><code>-a</code>.</li>
-		<li><strong>Какой параметр используется, для поиска по ключевым слова, на страницах man?</strong><br><code>-k</code>.</li>
-		<li><strong>Какой параметр используется для просмотра всех процессов текущего пользователя с помощью команды ps?</strong><br><code>-u имя_пользователя</code>.</li>
-		<li><strong>Какой параметр определяет IP-адрес в файле ifcfg-eth1 со статическим IP-адресом?</strong><br><code>IPADDR</code>.</li>
-		<li><strong>Какой параметр ядра будет изменен для настройки системы Linux в качестве маршрутизатора?</strong><br><code>net.ipv4.ip_forward=1</code>.</li>
-		<li><strong>Какой порт используется для HTTPS?</strong><br><code>443</code>.</li>
-		<li><strong>Какой порт по умолчанию для HTTP-запросов?</strong><br><code>80</code>.</li>
-		<li><strong>Какой режим обозначен как рабочий уровень 0?</strong><br>Выключение системы.</li>
-		<li><strong>Какой режим определяется как рабочий уровень 1?</strong><br>Однопользовательский режим (rescue).</li>
-		<li><strong>Какой режим определяется как рабочий уровень 2?</strong><br>Многопользовательский режим без сетевых служб.</li>
-		<li><strong>Какой сигнал команды kill по умолчанию?</strong><br><code>SIGTERM (15)</code>.</li>
-		<li><strong>Какой сигнал отправляется, чтобы остановить процесс в Gnome System Monitor?</strong><br><code>SIGKILL</code>.</li>
-		<li><strong>Какой символ добавляется в конец команды для запуска процесса в фоновом режиме (background)?</strong><br><code>&</code>.</li>
-		<li><strong>Какой синтаксис используется для замены команды?</strong><br><code>^старое^новое</code>.</li>
-		<li><strong>Какой синтаксис используется для перезапуска команды, содержащей определенный текст из истории команд?</strong><br><code>!текст</code>.</li>
-		<li><strong>Какой файл используется для настройки пользовательских маршрутов?</strong><br><code>/etc/sysconfig/network-scripts/route-ethX</code>.</li>
-		<li><strong>Какой файл используется для ограничения доступа пользователей в vsftpd?</strong><br><code>/etc/vsftpd/ftpusers</code>.</li>
-		<li><strong>Какой файл проверяется, чтобы определить пользовательскую shell по умолчанию?</strong><br><code>/etc/passwd</code>.</li>
-		<li><strong>Какой этап следует за выбором языка в процессе установки Ubuntu Server?</strong><br>Настройка раскладки клавиатуры.</li>
-		<li><strong>Какому классическому рабочему уровню соответствует multi-user.target, в systemd?</strong><br>Runlevel 3.</li>
-		<li><strong>Какую информацию DHCP-сервер предоставляет системе Linux?</strong><br>IP-адрес, шлюз, маска сети, DNS.</li>
-		<li><strong>Какую информацию отображает команда dmesg?</strong><br>Сообщения ядра и загрузки оборудования.</li>
-		<li><strong>Какую информацию отображает команда route?</strong><br>Таблицу маршрутизации.</li>
-		<li><strong>Какую информацию содержит файл /var/log/secure?</strong><br>Аутентификация, sudo, ssh, безопасность.</li>
-		<li><strong>Какую комбинацию клавиш можно использовать для выхода из shell?</strong><br><code>Ctrl+D</code>.</li>
-		<li><strong>Какую функцию выполняет udev?</strong><br>Управление устройствами в пространстве пользователя.</li>
-		<li><strong>Какую функцию выполняет каталог /etc/cron?</strong><br>Запуск заданий по расписанию.</li>
-		<li><strong>Какую функцию выполняет команда modprobe?</strong><br>Загрузка модуля ядра.</li>
-		<li><strong>Какую функцию выполняет программа Etcher при установке сервера Ubuntu для Raspberry Pi?</strong><br>Запись образа на SD-карту.</li>
-		<li><strong>На какие две основные группы делятся дистрибутивы Linux?</strong><br>Debian-based и RedHat-based.</li>
-		<li><strong>На какой архитектуре основано ядро Linux?</strong><br>UNIX-подобная.</li>
-		<li><strong>На какой букве обычно заканчиваются названия процессов демона?</strong><br><code>d</code> (например, sshd).</li>
-		<li><strong>Немедленное и принудительное отключение процесса</strong><br><code>kill -9 PID</code>.</li>
-		<li><strong>Пауза (остановка) процесса</strong><br><code>kill -STOP PID</code> или <code>Ctrl+Z</code>.</li>
-		<li><strong>По какому пути обычно находится домашний каталог пользователя root?</strong><br><code>/root</code>.</li>
-		<li><strong>После ввода пароля один раз с помощью команды sudo, как долго дополнительный пароль не требуется?</strong><br>15 минут (по умолчанию).</li>
-		<li><strong>Почему не рекомендуется редактировать напрямую, если NetworkManager включен в файле /etc/resolv.conf?</strong><br>Файл перезаписывается автоматически.</li>
-		<li><strong>Почему рекомендуется включить сервер OpenSSH при установке Ubuntu Server?</strong><br>Для удаленного управления сервером.</li>
-		<li><strong>Почему рекомендуется отключить NetworkManager при настройке параметров сети на серверах?</strong><br>Он может перезаписывать ручные настройки.</li>
-		<li><strong>При перезапуске службы в SysVinit, какая ситуация возникает, если служба уже остановлена?</strong><br>Она будет просто запущена.</li>
-		<li><strong>При редактировании командной строки, какая комбинация клавиш используется для перехода от одного символа к другому, чтобы двигаться назад?</strong><br><code>Ctrl+B</code>.</li>
-		<li><strong>При редактировании командной строки, какая комбинация клавиш используется для перехода от одного символа к другому, чтобы двигаться вперед?</strong><br><code>Ctrl+F</code></li>
-		<li><strong>Сколько места на жестком диске рекомендуется для установки Ubuntu Server?</strong><br>Минимум 2 ГБ, рекомендуется от 20 ГБ</li>
-		<li><strong>Через какие системы можно выполнить аутентификацию в Linux?</strong><br>PAM, LDAP, Kerberos, /etc/passwd и /etc/shadow</li>
-		<li><strong>Через какой порт протокол FTP прослушивает клиентские запросы?</strong><br>Порт <code>21</code></li>
-		<li><strong>Что делает команда init 0?</strong><br>Выключает систему</li>
-		<li><strong>Что нужно для включения доступа обычных пользователей к FTP в режиме SELinux enforcing?</strong><br>Установить контекст <code>ftp_home_dir</code> на домашние каталоги</li>
-		<li><strong>Что означает Код ошибки 403?</strong><br>Доступ запрещён (Forbidden)</li>
-		<li><strong>Что означает Код ошибки 404?</strong><br>Файл не найден (Not Found)</li>
-		<li><strong>Что означает Код ошибки 500?</strong><br>Внутренняя ошибка сервера (Internal Server Error)</li>
-		<li><strong>Что означает символ «R» в столбце «STAT», указывающий на состояние процесса?</strong><br>Процесс выполняется (Running)</li>							
+		<li><strong>C какой целью его используют параметр ifcfg-eth0 faylida NM_CONTROLLED=no?</strong><br><br>Чтобы NetworkManager не управлял интерфейсом.</li>
+		<li><strong>В Apache, через какую директиву активируется файл .htaccess?</strong><br><br>AllowOverride.</li>
+		<li><strong>В каких каталогах обычно находятся команды администратора?</strong><br><br>/sbin, /usr/sbin.</li>
+		<li><strong>В какой каталог копируется скрипт при добавлении новой службы в SysVinit?</strong><br><br>/etc/init.d.</li>
+		<li><strong>В какой среде была разработана демоверсия upstart init?</strong><br><br>Ubuntu.</li>
+		<li><strong>В какой файл рекомендуется добавлять alias (псевдоним), чтобы сделать его постоянным?</strong><br><br>~/.bashrc.</li>
+		<li><strong>В каком блоке происходит настройка виртуальных хостов в Apache?</strong><br><br>&lt;VirtualHost&gt;.</li>
+		<li><strong>В каком каталоге контролируется сценариями, запуск или остановка служб в sysvinit?</strong><br><br>/etc/init.d и /etc/rc.d.</li>
+		<li><strong>В каком каталоге находится DocumentRoot по умолчанию для содержимого в Apache?</strong><br><br>/var/www/html.</li>
+		<li><strong>В каком каталоге находится основной файл конфигурации Apache?</strong><br><br>/etc/httpd/conf.</li>
+		<li><strong>В каком каталоге находится основной файл конфигурации vsftpd?</strong><br><br>/etc.</li>
+		<li><strong>В каком каталоге находятся файлы конфигурации сетевого интерфейса?</strong><br><br>/etc/sysconfig/network-scripts.</li>
+		<li><strong>В каком каталоге находятся файлы конфигурации службы в Upstart?</strong><br><br>/etc/init.</li>
+		<li><strong>В каком каталоге хранятся log файлы vsftpd?</strong><br><br>/var/log.</li>
+		<li><strong>В каком пакете находится web-сервер Apache в Fedora и RHEL?</strong><br><br>httpd.</li>
+		<li><strong>В каком разделе на страницах man находится информация об устройствах и пользовательских файлах?</strong><br><br>Раздел 4.</li>
+		<li><strong>В каком редакторе можно редактировать команду в истории с помощью команды fc?</strong><br><br>По умолчанию vi.</li>
+		<li><strong>В каком файле установлен параметр bonding_opts при настройке интерфейса Bonding?</strong><br><br>/etc/sysconfig/network-scripts/ifcfg-bond0.</li>
+		<li><strong>В каком файле установлен уровень запуска по умолчанию в SysVinit?</strong><br><br>/etc/inittab.</li>
+		<li><strong>В каком файле хранятся личные настройки shell пользователя?</strong><br><br>~/.bashrc или ~/.bash_profile.</li>
+		<li><strong>В конфигурации Apache, какой каталог используется для добавления файлов с расширением conf?</strong><br><br>/etc/httpd/conf.d.</li>
+		<li><strong>В чем главный недостаток редактирования файлов конфигурации?</strong><br><br>Высокий риск ошибок и необходимость перезапуска служб.</li>
+		<li><strong>В чем одно из основных преимуществ программного обеспечения с открытым исходным кодом?</strong><br><br>Свобода модификации и отсутствие лицензий.</li>
+		<li><strong>В чем одно из основных различий между Windows и Linux?</strong><br><br>Linux — открытый и настраиваемый, Windows — проприетарный.</li>
+		<li><strong>В чем основное отличие команды ifconfig от команды ip addr show?</strong><br><br>ip — современная замена ifconfig с расширенной функциональностью.</li>
+		<li><strong>В чем основное отличие команды sudo от команды su?</strong><br><br>sudo выполняет одну команду с правами root, su переключает пользователя.</li>
+		<li><strong>В чем особенность статических служб в systemd?</strong><br><br>Не могут быть запущены напрямую, используются как зависимости.</li>
+		<li><strong>В чем преимущество команды killall?</strong><br><br>Убивает процессы по имени, а не по PID.</li>
+		<li><strong>Где записать файл образа для установки Ubuntu Server на Raspberry Pi?</strong><br><br>На microSD-карту через dd или Raspberry Pi Imager.</li>
+		<li><strong>Где хранится информация о конфигурации в Linux?</strong><br><br>/etc.</li>
+		<li><strong>Для каких целей используется команда lspci?</strong><br><br>Просмотр информации об устройствах PCI.</li>
+		<li><strong>Для каких целей используется команда ping?</strong><br><br>Проверка доступности узла по сети.</li>
+		<li><strong>Для каких целей используется команда su?</strong><br><br>Переключение на другого пользователя.</li>
+		<li><strong>Для каких целей используется шлюз по умолчанию (default gateway)?</strong><br><br>Для выхода за пределы локальной сети.</li>
+		<li><strong>Для каких целей можно использовать команду /bin/mount для обычных пользователей?</strong><br><br>Монтирование, если разрешено через /etc/fstab или sudo.</li>
+		<li><strong>Для какого демона инициализации используется команда chkconfig, для аудита служб?</strong><br><br>SysVinit.</li>
+		<li><strong>Для чего используется proksi-сервер squid?</strong><br><br>Кэширование, фильтрация и контроль интернет-доступа.</li>
+		<li><strong>Для чего используется команда traceroute?</strong><br><br>Определение маршрута до хоста.</li>
+		<li><strong>Для чего используется пользователь lp?</strong><br><br>Управление печатью.</li>
+		<li><strong>Для чего используется файл /etc/hosts?</strong><br><br>Локальное сопоставление IP и доменных имён.</li>
+		<li><strong>Если нужно renice (обновить) процесс во время работы top, надо записать его идентификатор процесса (PID) и на какую кнопку нужно нажать?</strong><br><br>Нажать <code>r</code>, ввести PID и новый nice.</li>
+		<li><strong>Из какого каталога можно получить информацию о процессах?</strong><br><br>/proc.</li>
+		<li><strong>Из какого файла демон sysvinit получает информацию о конфигурации?</strong><br><br>/etc/inittab.</li>
+		<li><strong>К каким службам proksi-сервер обычно предоставляет доступ?</strong><br><br>HTTP, HTTPS, FTP.</li>
+		<li><strong>Как выполнить перезагрузку службы в Upstart?</strong><br><br><code>restart имя_службы</code>.</li>
+		<li><strong>Как демон systemd init ускоряет работу служб?</strong><br><br>Параллельный запуск и socket-based activation.</li>
+		<li><strong>Как долго обычно длится время аренды IP-адреса (lease Time)?</strong><br><br>24 часа (по умолчанию, зависит от настройки DHCP).</li>
+		<li><strong>Как называются рабочие уровни в systemd?</strong><br><br>Targets.</li>
+		<li><strong>Как определить сетевые настройки при установке Ubuntu Server?</strong><br><br>Через меню установки или файл cloud-init/netplan.</li>
+		<li><strong>Как происходит подключение (mounting) файловых систем в Linux?</strong><br><br>Через команду <code>mount</code> или записи в <code>/etc/fstab</code>.</li>
+		<li><strong>Какая shell используется в качестве shell по умолчанию в большинстве систем Linux?</strong><br><br>bash.</li>
+		<li><strong>Какая директива используется для определения документа ошибки в Apache?</strong><br><br>ErrorDocument.</li>
+		<li><strong>Какая из этих команд используется для показа списока ранее выполненных команд?</strong><br><br>history.</li>
+		<li><strong>Какая клавиша нажимается в команде top для сортировки процессов по использованию памяти (RAM)?</strong><br><br><code>M</code>.</li>
+		<li><strong>Какая клавиша нажимается для выключения процесса в команде top?</strong><br><br><code>k</code>.</li>
+		<li><strong>Какая команда используется для автоматического запуска web-сервера apache в Fedora?</strong><br><br><code>systemctl enable httpd</code>.</li>
+		<li><strong>Какая команда используется для автоматического запуска службы vsftpd в Fedora?</strong><br><br><code>systemctl enable vsftpd</code>.</li>
+		<li><strong>Какая команда используется для включения службы в systemd?</strong><br><br><code>systemctl enable имя_службы</code>.</li>
+		<li><strong>Какая команда используется для возврата фонового процесса в предыдущий режим (foreground)?</strong><br><br><code>fg</code>.</li>
+		<li><strong>Какая команда используется для определения местоположения команды?</strong><br><br><code>which</code>.</li>
+		<li><strong>Какая команда используется для остановки службы в sysvinit?</strong><br><br><code>service имя_службы stop</code>.</li>
+		<li><strong>Какая команда используется для проверки статуса службы в Upstart?</strong><br><br><code>status имя_службы</code>.</li>
+		<li><strong>Какая команда используется для проверки текущего состояния службы в SysVinit?</strong><br><br><code>service имя_службы status</code>.</li>
+		<li><strong>Какая команда используется для продолжения процесса в фоновом режиме (background)?</strong><br><br><code>bg</code>.</li>
+		<li><strong>Какая команда используется для просмотра UUID всех устройств в системе?</strong><br><br><code>blkid</code>.</li>
+		<li><strong>Какая команда используется для просмотра всех переменных в текущей shell?</strong><br><br><code>set</code>.</li>
+		<li><strong>Какая команда используется для просмотра переменных среды?</strong><br><br><code>env</code>.</li>
+		<li><strong>Какая команда используется для просмотра поддерживаемых файловых систем в Linux?</strong><br><br><code>cat /proc/filesystems</code>.</li>
+		<li><strong>Какая команда используется для просмотра процессов в фоновом режиме?</strong><br><br><code>jobs</code>.</li>
+		<li><strong>Какая команда используется для просмотра псевдонимов в shell?</strong><br><br><code>alias</code>.</li>
+		<li><strong>Какая команда используется для просмотра разделов диска в системе Linux?</strong><br><br><code>fdisk -l</code> или <code>lsblk</code>.</li>
+		<li><strong>Какая команда используется для просмотра текущей переменной среды PATH в shell?</strong><br><br><code>echo $PATH</code>.</li>
+		<li><strong>Какая команда используется для расширения логической папки LVM?</strong><br><br><code>lvextend</code>.</li>
+		<li><strong>Какая команда используется для создания файловой системы ext4 в новой логической папке?</strong><br><br><code>mkfs.ext4</code>.</li>
+		<li><strong>Какая команда используется для удаления NetworkManager в системах RHEL или более старых системах Fedora?</strong><br><br><code>yum remove NetworkManager</code>.</li>
+		<li><strong>Какая команда используется, чтобы сделать службу постоянной в sysvinit?</strong><br><br><code>chkconfig имя_службы on</code>.</li>
+		<li><strong>Какая команда рекомендуется для редактирования файла sudoers?</strong><br><br><code>visudo</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для ввода текущего слова в нижнем регистре в командной строке?</strong><br><br><code>Alt + l</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для добавления специального символа в командную строку?</strong><br><br><code>Ctrl + v</code> перед символом.</li>
+		<li><strong>Какая комбинация клавиш используется для замены местами текущего и предыдущего слов в командной строке?</strong><br><br><code>Ctrl + t</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для замены местами текущего и предыдущего символов в командной строке?</strong><br><br><code>Ctrl + t</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для обратного поиска в истории команд?</strong><br><br><code>Ctrl + r</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для обрезки текста от курсора до конца строки в командной строке?</strong><br><br><code>Ctrl + k</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для переключения между виртуальными консолями?</strong><br><br><code>Ctrl + Alt + F1–F6</code> (или F7–F12).</li>
+		<li><strong>Какая комбинация клавиш используется для перемещения курсора к началу строки при редактировании командной строки?</strong><br><br><code>Ctrl + a</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для перемещения слова назад при редактировании командной строки?</strong><br><br><code>Alt + b</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для перехода в конец текущей строки при редактировании командной строки?</strong><br><br><code>Ctrl + e</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для преобразования слова в прописные буквы в командной строке?</strong><br><br><code>Alt + u</code>.</li>
+		<li><strong>Какая комбинация клавиш используется для увеличения первой буквы текущего слова в командной строке?</strong><br><br><code>Alt + c</code>.</li>
+		<li><strong>Какая опция используется для отображения содержимого каталога в Apache?</strong><br><br>Options Indexes.</li>
+		<li><strong>Какая организация поддерживает web-сервер Apache?</strong><br><br>Apache Software Foundation.</li>
+		<li><strong>Какая форма используется для расширения арифметического выражения?</strong><br><br><code>$(( выражение ))</code>.</li>
+		<li><strong>Какие root-права требуются при запуске графических элементов управления?</strong><br><br>Права суперпользователя (sudo/root).</li>
+		<li><strong>Какие данные отображает команда ip addr show?</strong><br><br>IP-адреса, MAC-адреса, состояния интерфейсов.</li>
+		<li><strong>Какие клавиши обычно используются для доступа к меню загрузки (boot) при установке Ubuntu Server?</strong><br><br><code>F2</code>, <code>F10</code>, <code>F12</code>, <code>Esc</code> (зависит от производителя).</li>
+		<li><strong>Какие команды хранятся в каталоге sbin?</strong><br><br>Системные команды для администратора.</li>
+		<li><strong>Какие настройки используются при ограничении диапазона портов для пассивного FTP в vsftpd?</strong><br><br><code>pasv_min_port</code> и <code>pasv_max_port</code>.</li>
+		<li><strong>Какие права требуются для выполнения задач управления системой?</strong><br><br>Права суперпользователя (root).</li>
+		<li><strong>Какие типы данных можно изменить с помощью system-config-network?</strong><br><br>IP-адрес, маска, шлюз, DNS, имя хоста, интерфейсы.</li>
+		<li><strong>Какие функции должен поддерживать сервисный скрипт в sysvinit?</strong><br><br><code>start</code>, <code>stop</code>, <code>restart</code>, <code>status</code>.</li>
+		<li><strong>Каким образом можно изменить настройки proksi в браузере Firefox?</strong><br><br>Настройки → Сеть → Настроить подключение → Прокси-сервер.</li>
+		<li><strong>Каким режимом определяется рабочий уровень 3?</strong><br><br>Многопользовательский режим без GUI.</li>
+		<li><strong>Каким режимом определяется рабочий уровень 4?</strong><br><br>Не используется, доступен для пользовательской настройки.</li>
+		<li><strong>Каким режимом определяется рабочий уровень 5?</strong><br><br>Многопользовательский режим с GUI.</li>
+		<li><strong>Каким режимом определяется рабочий уровень 6?</strong><br><br>Перезагрузка (reboot).</li>
+		<li><strong>Какова основная функция DNS-сервера?</strong><br><br>Преобразование доменных имен в IP-адреса.</li>
+		<li><strong>Какова основная функция метаданного Pipe ( | )?</strong><br><br>Передача вывода одной команды как ввода другой.</li>
+		<li><strong>Какова основная функция поля swap в Linux?</strong><br><br>Расширение оперативной памяти с помощью дискового пространства.</li>
+		<li><strong>Какова основная функция сигнала SIGHUP (1)?</strong><br><br>Перезапуск процесса или перечтение конфигурации.</li>
+		<li><strong>Какова основная функция файла /etc/fstab?</strong><br><br>Автоматическое монтирование файловых систем при загрузке.</li>
+		<li><strong>Какова основная функция ядра Linux?</strong><br><br>Управление ресурсами системы и взаимодействие между аппаратурой и ПО.</li>
+		<li><strong>Какова основная цель VPN-соединения?</strong><br><br>Безопасная передача данных через интернет.</li>
+		<li><strong>Какова основная цель системы Active Directory в Windows?</strong><br><br>Централизованное управление пользователями и ресурсами.</li>
+		<li><strong>Каковы минимальные требования к оперативной памяти (RAM) для установки Ubuntu Server?</strong><br><br>512 МБ (рекомендуется от 1 ГБ).</li>
+		<li><strong>Какое действие выполняется, чтобы отключить службу в Upstart?</strong><br><br><code>echo "manual" > /etc/init/имя.override</code>.</li>
+		<li><strong>Какое имя пользователя и пароль по умолчанию используются при первой загрузке сервера Ubuntu на Raspberry Pi?</strong><br><br><code>ubuntu</code> / <code>ubuntu</code>.</li>
+		<li><strong>Какое имя файла используется для создания интерфейса с псевдонимом?</strong><br><br><code>ifcfg-eth0:0</code>.</li>
+		<li><strong>Какое руководство используется для проверки контекстов файлов для Apache в SELinux?</strong><br><br><code>semanage fcontext</code>.</li>
+		<li><strong>Какое слово будет добавлено, чтобы предоставить пользователю root доступ без пароля через sudo?</strong><br><br><code>NOPASSWD:</code>.</li>
+		<li><strong>Какое событие можно использовать для запуска службы в Upstart?</strong><br><br><code>start on</code> с указанием события (например, <code>runlevel</code>).</li>
+		<li><strong>Какое требование предъявляет Public Litsenziyasi  GNU (GPL)?</strong><br><br>Открытый исходный код и сохранение лицензии при распространении.</li>
+		<li><strong>Какое устройство используется для подключения к проводной сети?</strong><br><br>Ethernet-интерфейс (обычно <code>eth0</code> или <code>enpXsY</code>).</li>
+		<li><strong>Какой UID (идентификатор пользователя) отображается для пользователя root в файле /etc/passwd?</strong><br><br><code>0</code>.</li>
+		<li><strong>Какой web-сайт вы должны посетить, чтобы загрузить Ubuntu Server для Raspberry Pi?</strong><br><br><a href="https://ubuntu.com/download/raspberry-pi">ubuntu.com/download/raspberry-pi</a>.</li>
+		<li><strong>Какой базовый каталог по умолчанию для анонимного пользователя на FTP-сервере?</strong><br><br><code>/var/ftp</code> или <code>/srv/ftp</code>.</li>
+		<li><strong>Какой вариант используется для подключения сетевых файловых систем (например, NFS) в файле /etc/fstab?</strong><br><br><code>nfs</code>.</li>
+		<li><strong>Какой графический инструмент используется для управления учетными записями пользователей и групп?</strong><br><br><code>gnome-system-tools</code> (Users and Groups).</li>
+		<li><strong>Какой идентификатор используется для идентификации процесса в системе Linux?</strong><br><br>PID (Process ID).</li>
+		<li><strong>Какой идентификатор процесса (PID) имеет демон инициализации Linux?</strong><br><br><code>1</code>.</li>
+		<li><strong>Какой инструмент используется для отображения подробной информации о жестких дисках, управления разделами диска и добавления файловых систем?</strong><br><br><code>gparted</code>.</li>
+		<li><strong>Какой интерфейс предоставляет инструмент system-config-network?</strong><br><br>Графический (GUI) и текстовый (TUI) интерфейсы настройки сети.</li>
+		<li><strong>Какой командой выполняется условный перезапуск службы в systemd?</strong><br><br><code>systemctl try-restart имя_службы</code>.</li>
+		<li><strong>Какой метасимвол используется для последовательного выполнения нескольких команд?</strong><br><br><code>;</code>.</li>
+		<li><strong>Какой пакет является FTP-сервером, используемым по умолчанию в Linux?</strong><br><br><code>vsftpd</code>.</li>
+		<li><strong>Какой параметр используется в vsftpd для ограничения локальных пользователей в их домашних каталогах?</strong><br><br><code>chroot_local_user=YES</code>.</li>
+		<li><strong>Какой параметр используется для включения загрузки файлов анонимным пользователем в vsftpd?</strong><br><br><code>anon_upload_enable=YES</code>.</li>
+		<li><strong>Какой параметр используется для изменения значения nice процесса с помощью команды renice?</strong><br><br><code>-n</code>.</li>
+		<li><strong>Какой параметр используется для краткого описания команды?</strong><br><br><code>--help</code>.</li>
+		<li><strong>Какой параметр используется для отображения скрытых файлов в команде ls?</strong><br><br><code>-a</code>.</li>
+		<li><strong>Какой параметр используется, для поиска по ключевым слова, на страницах man?</strong><br><br><code>-k</code>.</li>
+		<li><strong>Какой параметр используется для просмотра всех процессов текущего пользователя с помощью команды ps?</strong><br><br><code>-u имя_пользователя</code>.</li>
+		<li><strong>Какой параметр определяет IP-адрес в файле ifcfg-eth1 со статическим IP-адресом?</strong><br><br><code>IPADDR</code>.</li>
+		<li><strong>Какой параметр ядра будет изменен для настройки системы Linux в качестве маршрутизатора?</strong><br><br><code>net.ipv4.ip_forward=1</code>.</li>
+		<li><strong>Какой порт используется для HTTPS?</strong><br><br><code>443</code>.</li>
+		<li><strong>Какой порт по умолчанию для HTTP-запросов?</strong><br><br><code>80</code>.</li>
+		<li><strong>Какой режим обозначен как рабочий уровень 0?</strong><br><br>Выключение системы.</li>
+		<li><strong>Какой режим определяется как рабочий уровень 1?</strong><br><br>Однопользовательский режим (rescue).</li>
+		<li><strong>Какой режим определяется как рабочий уровень 2?</strong><br><br>Многопользовательский режим без сетевых служб.</li>
+		<li><strong>Какой сигнал команды kill по умолчанию?</strong><br><br><code>SIGTERM (15)</code>.</li>
+		<li><strong>Какой сигнал отправляется, чтобы остановить процесс в Gnome System Monitor?</strong><br><br><code>SIGKILL</code>.</li>
+		<li><strong>Какой символ добавляется в конец команды для запуска процесса в фоновом режиме (background)?</strong><br><br><code>&</code>.</li>
+		<li><strong>Какой синтаксис используется для замены команды?</strong><br><br><code>^старое^новое</code>.</li>
+		<li><strong>Какой синтаксис используется для перезапуска команды, содержащей определенный текст из истории команд?</strong><br><br><code>!текст</code>.</li>
+		<li><strong>Какой файл используется для настройки пользовательских маршрутов?</strong><br><br><code>/etc/sysconfig/network-scripts/route-ethX</code>.</li>
+		<li><strong>Какой файл используется для ограничения доступа пользователей в vsftpd?</strong><br><br><code>/etc/vsftpd/ftpusers</code>.</li>
+		<li><strong>Какой файл проверяется, чтобы определить пользовательскую shell по умолчанию?</strong><br><br><code>/etc/passwd</code>.</li>
+		<li><strong>Какой этап следует за выбором языка в процессе установки Ubuntu Server?</strong><br><br>Настройка раскладки клавиатуры.</li>
+		<li><strong>Какому классическому рабочему уровню соответствует multi-user.target, в systemd?</strong><br><br>Runlevel 3.</li>
+		<li><strong>Какую информацию DHCP-сервер предоставляет системе Linux?</strong><br><br>IP-адрес, шлюз, маска сети, DNS.</li>
+		<li><strong>Какую информацию отображает команда dmesg?</strong><br><br>Сообщения ядра и загрузки оборудования.</li>
+		<li><strong>Какую информацию отображает команда route?</strong><br><br>Таблицу маршрутизации.</li>
+		<li><strong>Какую информацию содержит файл /var/log/secure?</strong><br><br>Аутентификация, sudo, ssh, безопасность.</li>
+		<li><strong>Какую комбинацию клавиш можно использовать для выхода из shell?</strong><br><br><code>Ctrl+D</code>.</li>
+		<li><strong>Какую функцию выполняет udev?</strong><br><br>Управление устройствами в пространстве пользователя.</li>
+		<li><strong>Какую функцию выполняет каталог /etc/cron?</strong><br><br>Запуск заданий по расписанию.</li>
+		<li><strong>Какую функцию выполняет команда modprobe?</strong><br><br>Загрузка модуля ядра.</li>
+		<li><strong>Какую функцию выполняет программа Etcher при установке сервера Ubuntu для Raspberry Pi?</strong><br><br>Запись образа на SD-карту.</li>
+		<li><strong>На какие две основные группы делятся дистрибутивы Linux?</strong><br><br>Debian-based и RedHat-based.</li>
+		<li><strong>На какой архитектуре основано ядро Linux?</strong><br><br>UNIX-подобная.</li>
+		<li><strong>На какой букве обычно заканчиваются названия процессов демона?</strong><br><br><code>d</code> (например, sshd).</li>
+		<li><strong>Немедленное и принудительное отключение процесса</strong><br><br><code>kill -9 PID</code>.</li>
+		<li><strong>Пауза (остановка) процесса</strong><br><br><code>kill -STOP PID</code> или <code>Ctrl+Z</code>.</li>
+		<li><strong>По какому пути обычно находится домашний каталог пользователя root?</strong><br><br><code>/root</code>.</li>
+		<li><strong>После ввода пароля один раз с помощью команды sudo, как долго дополнительный пароль не требуется?</strong><br><br>15 минут (по умолчанию).</li>
+		<li><strong>Почему не рекомендуется редактировать напрямую, если NetworkManager включен в файле /etc/resolv.conf?</strong><br><br>Файл перезаписывается автоматически.</li>
+		<li><strong>Почему рекомендуется включить сервер OpenSSH при установке Ubuntu Server?</strong><br><br>Для удаленного управления сервером.</li>
+		<li><strong>Почему рекомендуется отключить NetworkManager при настройке параметров сети на серверах?</strong><br><br>Он может перезаписывать ручные настройки.</li>
+		<li><strong>При перезапуске службы в SysVinit, какая ситуация возникает, если служба уже остановлена?</strong><br><br>Она будет просто запущена.</li>
+		<li><strong>При редактировании командной строки, какая комбинация клавиш используется для перехода от одного символа к другому, чтобы двигаться назад?</strong><br><br><code>Ctrl+B</code>.</li>
+		<li><strong>При редактировании командной строки, какая комбинация клавиш используется для перехода от одного символа к другому, чтобы двигаться вперед?</strong><br><br><code>Ctrl+F</code></li>
+		<li><strong>Сколько места на жестком диске рекомендуется для установки Ubuntu Server?</strong><br><br>Минимум 2 ГБ, рекомендуется от 20 ГБ</li>
+		<li><strong>Через какие системы можно выполнить аутентификацию в Linux?</strong><br><br>PAM, LDAP, Kerberos, /etc/passwd и /etc/shadow</li>
+		<li><strong>Через какой порт протокол FTP прослушивает клиентские запросы?</strong><br><br>Порт <code>21</code></li>
+		<li><strong>Что делает команда init 0?</strong><br><br>Выключает систему</li>
+		<li><strong>Что нужно для включения доступа обычных пользователей к FTP в режиме SELinux enforcing?</strong><br><br>Установить контекст <code>ftp_home_dir</code> на домашние каталоги</li>
+		<li><strong>Что означает Код ошибки 403?</strong><br><br>Доступ запрещён (Forbidden)</li>
+		<li><strong>Что означает Код ошибки 404?</strong><br><br>Файл не найден (Not Found)</li>
+		<li><strong>Что означает Код ошибки 500?</strong><br><br>Внутренняя ошибка сервера (Internal Server Error)</li>
+		<li><strong>Что означает символ «R» в столбце «STAT», указывающий на состояние процесса?</strong><br><br>Процесс выполняется (Running)</li>							
 	</ol>
 </body>
 </html>
